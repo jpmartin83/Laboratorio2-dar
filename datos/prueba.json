@@ -1,0 +1,18 @@
+{
+  "laboratorio": "Tecnologias JavaScript y AJAX",
+  "asignatura": "Desarrollo de Aplicaciones en Red",
+  "universidad": "UNIR",
+  "ejercicio": "Peticiones AJAX",
+  "mensaje": "La solicitud HTTP se completo correctamente.",
+  "estado": "OK",
+  "datos": {
+    "numero": 123,
+    "activo": true,
+    "tecnologias": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "AJAX"
+    ]
+  }
+}

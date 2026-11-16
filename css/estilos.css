@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #243047;
+}
+
+.contenedor {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h1 {
+    color: #163b75;
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2456a6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #b9c4d5;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px;
+    background: #2456a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #183c78;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 6px;
+    background: #eef2f8;
+}
+
+.correcto {
+    background: #e5f6eb;
+    color: #176137;
+}
+
+.error {
+    background: #fdeaea;
+    color: #9d2424;
+}
+
+/* Separacion entre tarjetas */
+
+.tarjeta + .tarjeta {
+    margin-top: 30px;
+}
+
+/* Dispositivos moviles */
+
+@media (max-width: 600px) {
+    .contenedor {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+/* Resultados del laboratorio AJAX */
+
+.salida-ajax {
+    background: #eef2f8;
+    padding: 16px;
+    border: 1px solid #d8e0ec;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 350px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+h3 {
+    margin-top: 26px;
+    color: #2456a6;
+}

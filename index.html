@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2 - JavaScript y AJAX</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/ejercicios.js" defer></script>
+    <script src="js/ajax.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <header>
+            <h1>Laboratorio 2: JavaScript y AJAX</h1>
+            <p>Desarrollo de Aplicaciones en Red - UNIR</p>
+        </header>
+
+        <section class="tarjeta">
+            <h2>Ejercicio 1: Detector de palíndromos</h2>
+            <p>
+                Introduce una palabra o frase para comprobar
+                si es un palíndromo.
+            </p>
+
+            <form id="form-palindromo">
+                <label for="texto-palindromo">
+                    Palabra o frase:
+                </label>
+
+                <input
+                    type="text"
+                    id="texto-palindromo"
+                    placeholder="Ejemplo: Anita lava la tina"
+                    required
+                >
+
+                <button type="submit">
+                    Verificar palíndromo
+                </button>
+            </form>
+
+            <div id="resultado-palindromo"
+                 class="resultado"
+                 role="status"
+                 aria-live="polite">
+                Introduce una frase para comenzar.
+            </div>
+        </section>
+
+        <!-- Ejercicio 2: Comparar dos numeros -->
+        <section class="tarjeta">
+            <h2>Ejercicio 2: Comparar dos números</h2>
+
+            <p>
+                Introduce dos números para determinar
+                cuál es mayor o si son iguales.
+            </p>
+
+            <form id="form-comparar">
+                <label for="numero1">Primer número:</label>
+                <input type="number" id="numero1"
+                       step="any" required>
+
+                <label for="numero2">Segundo número:</label>
+                <input type="number" id="numero2"
+                       step="any" required>
+
+                <button type="submit">
+                    Comparar números
+                </button>
+            </form>
+
+            <div id="resultado-comparar"
+                 class="resultado"
+                 role="status"
+                 aria-live="polite">
+                Introduce dos números para comenzar.
+            </div>
+        </section>
+
+
+        <!-- Ejercicio 3: Identificar vocales -->
+        <section class="tarjeta">
+            <h2>Ejercicio 3: Identificar vocales</h2>
+            <p>
+                Introduce una frase para identificar las
+                vocales que aparecen en ella.
+            </p>
+
+            <form id="form-vocales">
+                <label for="frase-vocales">
+                    Introduce una frase:
+                </label>
+
+                <input type="text"
+                       id="frase-vocales"
+                       placeholder="Ejemplo: Universidad"
+                       required>
+
+                <button type="submit">
+                    Identificar vocales
+                </button>
+            </form>
+
+            <div id="resultado-vocales"
+                 class="resultado"
+                 role="status"
+                 aria-live="polite">
+                Introduce una frase para comenzar.
+            </div>
+        </section>
+
+        <!-- Ejercicio 4: Contar vocales -->
+        <section class="tarjeta">
+            <h2>Ejercicio 4: Contar vocales</h2>
+            <p>
+                Introduce una frase para contar cuántas
+                veces aparece cada vocal.
+            </p>
+
+            <form id="form-contar-vocales">
+                <label for="frase-contar">
+                    Introduce una frase:
+                </label>
+
+                <input type="text"
+                       id="frase-contar"
+                       placeholder="Ejemplo: Murciélago"
+                       required>
+
+                <button type="submit">
+                    Contar vocales
+                </button>
+            </form>
+
+            <div id="resultado-contar"
+                 class="resultado"
+                 role="status"
+                 aria-live="polite">
+                Introduce una frase para comenzar.
+            </div>
+        </section>
+
+
+        <section class="tarjeta" id="laboratorio-ajax">
+            <h2>Laboratorio AJAX: Peticiones HTTP</h2>
+
+            <p>
+                Consulta el contenido de una URL utilizando
+                XMLHttpRequest.
+            </p>
+
+            <form id="form-ajax">
+                <label for="url-ajax">URL de consulta:</label>
+                <input type="url" id="url-ajax" required>
+
+                <button type="submit">
+                    Mostrar Contenidos
+                </button>
+            </form>
+
+            <h3>Estados de la peticion</h3>
+            <pre id="ajax-estados"
+                 class="salida-ajax"
+                 role="status"
+                 aria-live="polite">No iniciada</pre>
+
+            <h3>Contenidos</h3>
+            <pre id="ajax-contenidos"
+                 class="salida-ajax"></pre>
+
+            <h3>Cabeceras HTTP de la respuesta del servidor</h3>
+            <pre id="ajax-cabeceras"
+                 class="salida-ajax"></pre>
+
+            <h3>Codigo de estado</h3>
+            <pre id="ajax-codigo"
+                 class="salida-ajax"></pre>
+        </section>
+
+    </main>
+</body>
+</html>
